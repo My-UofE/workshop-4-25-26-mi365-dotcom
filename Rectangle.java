@@ -24,7 +24,7 @@ public class Rectangle {
 
   public Rectangle() {
     this.width = 1.0;
-    this.width = 1.0;
+    this.height = 1.0;
   }
 
   // method: move the rectangle
