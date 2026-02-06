@@ -53,19 +53,19 @@ public class Rectangle {
   }
 
   public boolean isOverlappedWith(Rectangle r){
-    if(this.originX + this.width <= r.originX) {
+    if(this.originX + this.width < r.originX) {
       return false;
     }
     
-    if(this.originX >= this.width + r.originX) {
+    if(this.originX > this.width + r.originX) {
       return false;
     }
 
-    if(this.originY + this.height <= r.originY) {
+    if(this.originY + this.height < r.originY) {
       return false;
     }
 
-    if(this.originY >= this.height + r.originY) {
+    if(this.originY > this.height + r.originY) {
       return false;
     }
     else {
