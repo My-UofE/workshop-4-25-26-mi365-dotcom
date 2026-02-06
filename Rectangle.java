@@ -17,6 +17,10 @@ public class Rectangle {
     this.originX = oX;
     this.originY = oY;
   }
+  // second constructor: 
+  public Rectangle(double width, double height) {
+    this(width, height, 0, 0);
+  }
 
   // method: move the rectangle
   public void move(double dx, double dy) {
