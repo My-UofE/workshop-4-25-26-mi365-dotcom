@@ -51,4 +51,26 @@ public class Rectangle {
   public void scale(double scaleFactor){
     scale(scaleFactor, scaleFactor);
   }
+
+  public boolean isOverlappedWith(Rectangle r){
+    if(this.originX + this.width <= r.originX) {
+      return false;
+    }
+    
+    if(this.originX >= this.width + r.originX) {
+      return false;
+    }
+
+    if(this.originY + this.height <= r.originY) {
+      return false;
+    }
+
+    if(this.originY >= this.height + r.originY) {
+      return false;
+    }
+    else {
+      return true;
+    }
+  }
+
 }
