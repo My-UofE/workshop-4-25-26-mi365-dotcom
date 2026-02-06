@@ -73,7 +73,7 @@ public class RectangleApp {
 
 		Rectangle r1 = new Rectangle(10.0,5.0);
 		Rectangle r2 = new Rectangle(10.0,5.0);
-		Rectangle r3 = r2;
+		Rectangle r3 = new Rectangle(r2.getWidth(), r2.getHeight());
 
 		System.out.println("Object reference tests:");
 		System.out.println("r1: " + r1);
