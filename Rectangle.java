@@ -12,10 +12,10 @@ public class Rectangle {
 
   // main constructor
   public Rectangle(double w, double h, double oX, double oY) {
-    width = w;
-    height = h;
-    originX = oX;
-    originY = oY;
+    this.width = w;
+    this.height = h;
+    this.originX = oX;
+    this.originY = oY;
   }
 
   // method: move the rectangle
