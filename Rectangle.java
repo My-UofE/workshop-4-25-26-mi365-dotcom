@@ -42,5 +42,13 @@ public class Rectangle {
   public double getPerimeter() {
     return 2 * (width + height);
   }
+
+  public void scale(double ScaleX, double ScaleY){
+    width *= ScaleX;
+    height *= ScaleY;
+  }
   
+  public void scale(double scaleFactor){
+    scale(scaleFactor, scaleFactor);
+  }
 }
