@@ -69,6 +69,6 @@ public class RectangleApp {
 		System.out.println( "Width: "+myRect7.getWidth()+", Height: "+myRect7.getHeight() );
 		// change to negative width should be ignored
 		myRect7.setWidth(-10);
-		System.out.println( "Width: "+myRect7.getWidth()+", Height: "+myRect7.getHeight() );
+		System.out.println( "Width: "+ myRect7.getWidth()+", Height: "+myRect7.getHeight() );
 	}
 }
