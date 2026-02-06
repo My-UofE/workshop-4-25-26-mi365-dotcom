@@ -2,13 +2,48 @@
 public class Rectangle {
   
   // 4 instance attributes
-  public double width;
-  public double height;
-  public double originX = 0.0;
-  public double originY = 0.0;
+  private double width;
+  private double height;
+  private double originX = 0.0;
+  private double originY = 0.0;
 
   // 1 static attributes
   public static final int NUMBER_OF_SIDES = 4;
+
+  
+  public double getWidth(){
+    return width;
+  }
+
+  public void setWidth(double width){
+    this.width = width;
+  }
+
+  public double getHeight(){
+    return height;
+  }
+
+  public void setHeight(double height){
+    this.height = height;
+  }
+
+  public double getOriginX(){
+    return originX;
+  }
+
+  public void setOriginX(double originX){
+    this.originX = originX;
+  }
+
+  public double getOriginY(){
+    return originY;
+  }
+
+  public void setOriginY(double originY){
+    this.originY = originY;
+  }
+
+
 
   // main constructor
   public Rectangle(double width, double height, double originX, double originY) {
@@ -17,6 +52,8 @@ public class Rectangle {
     this.originX = originX;
     this.originY = originY;
   }
+
+
   // second constructor: 
   public Rectangle(double width, double height) {
     this(width, height, 0, 0);
