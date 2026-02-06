@@ -55,5 +55,8 @@ public class RectangleApp {
 		// myRect4 does not overlap myRect6 so these should show as false
 		System.out.println( "myRect4 overlaps myRect6: " + myRect4.isOverlappedWith(myRect6) ) ;
 		System.out.println( "myRect6 overlaps myRect4: " + myRect6.isOverlappedWith(myRect4) ) ;
+
+		System.out.println(myRect5.calcRatio());
+		System.out.println(myRect5.isSquare());
 	}
 }

@@ -73,4 +73,19 @@ public class Rectangle {
     }
   }
 
+  public double calcRatio(){
+    return width/height;
+
+  }
+
+  public boolean isSquare(){
+    if (calcRatio() > 0.999 && calcRatio() < 1.001) {
+      return true; 
+    }
+    else{
+      return false;
+    }
+
+  }
+
 }
