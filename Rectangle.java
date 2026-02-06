@@ -16,7 +16,9 @@ public class Rectangle {
   }
 
   public void setWidth(double width){
-    this.width = width;
+    if (width >= 0){
+      this.width = width;
+    }
   }
 
   public double getHeight(){
@@ -24,7 +26,9 @@ public class Rectangle {
   }
 
   public void setHeight(double height){
-    this.height = height;
+    if (height >= 0){
+      this.height = height;
+    }
   }
 
   public double getOriginX(){

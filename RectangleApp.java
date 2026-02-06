@@ -58,5 +58,17 @@ public class RectangleApp {
 
 		System.out.println(myRect5.calcRatio());
 		System.out.println(myRect5.isSquare());
+
+		System.out.println("Check class prevents negative widths");
+		// initialise rectangle for test
+		Rectangle myRect7 = new Rectangle(30.0, 5.0, 10, 10); 
+		System.out.println( "Width: "+myRect7.getWidth()+", Height: "+myRect7.getHeight() );
+		
+		// change to positive width should be allowed
+		myRect7.setWidth(40);
+		System.out.println( "Width: "+myRect7.getWidth()+", Height: "+myRect7.getHeight() );
+		// change to negative width should be ignored
+		myRect7.setWidth(-10);
+		System.out.println( "Width: "+myRect7.getWidth()+", Height: "+myRect7.getHeight() );
 	}
 }
