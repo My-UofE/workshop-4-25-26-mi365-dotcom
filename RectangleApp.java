@@ -40,5 +40,9 @@ public class RectangleApp {
         myRect2.scale(1,3); // should change height to 24 with width unchanged
 		System.out.println();
 		myRect3.scale(15,10); // should scale to width 15, height 10
+
+		System.out.println(myRect1.width + ", " + myRect1.height);
+		System.out.println(myRect2.width + ", " + myRect2.height);
+		System.out.println(myRect3.width + ", " + myRect3.height);
 	}
 }
