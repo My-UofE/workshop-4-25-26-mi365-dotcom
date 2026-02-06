@@ -57,7 +57,7 @@ public class Rectangle {
       return false;
     }
     
-    if(this.originX > this.width + r.originX) {
+    if(this.originX > r.width + r.originX) {
       return false;
     }
 
@@ -65,7 +65,7 @@ public class Rectangle {
       return false;
     }
 
-    if(this.originY > this.height + r.originY) {
+    if(this.originY > r.height + r.originY) {
       return false;
     }
     else {
